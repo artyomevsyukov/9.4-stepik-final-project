@@ -1,5 +1,4 @@
 /* Reset and base styles  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -9,8 +8,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
@@ -24,6 +22,7 @@ a:active {
 }
 
 /* Links */
+
 a,
 a:link,
 a:visited {
@@ -38,6 +37,7 @@ a:hover {
 }
 
 /* Common */
+
 aside,
 nav,
 footer,
@@ -74,6 +74,7 @@ svg {
 }
 
 /* Form */
+
 input,
 textarea,
 button,
@@ -88,10 +89,9 @@ input::-ms-clear {
 }
 
 button,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: transparent;
   background: none;
   cursor: pointer;
@@ -116,49 +116,3 @@ label {
 legend {
   display: block;
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.none {
-  display: none !important;
-}
-
-.container {
-  max-width: 1140px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.create-line {
-  width: 100%;
-}
-.create-line--white {
-  border-top: 1px solid #ffffff;
-  opacity: 0.4;
-}
-.create-line--white {
-  border-top: 1px solid #ffffff;
-  opacity: 0.4;
-}
-
-.create-line {
-  width: 100%;
-}
-.create-line--white {
-  border-bottom: 1px solid #ffffff;
-  opacity: 0.4;
-}
-.create-line--gray {
-  border-bottom: 1px solid #757575;
-  opacity: 1;
-}
-.create-line--gray--02 {
-  border-bottom: 1px solid #757575;
-  opacity: 0.2;
-}
-/*# sourceMappingURL=main.css.map */

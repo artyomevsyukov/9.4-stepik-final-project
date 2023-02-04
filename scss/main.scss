@@ -1,0 +1,32 @@
+//Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/media-breakpoint";
+
+// Bloks
+
+// @import "./blocks/header/index.scss";
+// @import "./blocks/title";
+// @import "./blocks/button";
+// @import "./blocks/svg";
+// @import "./blocks/portfolio/index.scss";
+// @import "./blocks/footer/index.scss";
+// @import "./blocks/forest-main";
+// @import "./blocks/forest-main-media";
+
+.create-line {
+  width: 100%;
+  &--white {
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.4;
+  }
+  &--gray {
+    border-bottom: 1px solid #757575;
+    opacity: 1;
+  }
+  &--gray--02 {
+    border-bottom: 1px solid #757575;
+    opacity: 0.2;
+  }
+}
