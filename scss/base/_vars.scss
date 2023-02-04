@@ -1,24 +1,51 @@
-$bg-footer: #262626;
-$btn-up: #59bd5a;
+:root {
+  --bg-footer: #262626;
+  --btn-up: #59bd5a;
+  // --bg-card-active: #979797;
+  --bg-card-active: #757575;
 
-// $buttonWhite: #fff;
-// $buttonBlue: #275bec;
-// $bgBlue: #1e4776;
-// $textBlack: #000;
+  --textBlack: #1d1d1d;
+
+  --colorBlack: #1d1d1d;
+  --textGray: #626262;
+  --textWhite: #fff;
+
+  --accent-color: #327430;
+
+  --container--laptop: 978px;
+  --container--tablet: 752px;
+  --container--mobile: 308px;
+
+  --breakpoint--laptop: 1124px;
+  --breakpoint--tablet: 768px;
+  --breakpoint--mobile: 320px;
+}
+
+// $bg-footer: #262626;
+// $btn-up: #59bd5a;
+// // $bg-card-active: #979797;
+// $bg-card-active: #757575;
+
+// // $buttonWhite: #fff;
+// // $buttonBlue: #275bec;
+// // $bgBlue: #1e4776;
+// $textBlack: #1d1d1d;
+// $textGray: #626262;
 // $textWhite: #fff;
-// $textBlue: #7e9ec9;
 
-// $accent-color: #f78434;
+// // $textBlue: #7e9ec9;
+
+// $accent-color: #327430;
 // // $accent-color-hover: #ff6a00;
 // $accent-color-hover: #1e4776;
 // $title2: #323232;
 // $black-color: #323232;
 // $black-color: #323252;
 
-$container--laptop: 956px;
-$container--tablet: 752px;
-$container--mobile: 308px;
+// $container--laptop: 972px;
+// $container--tablet: 752px;
+// $container--mobile: 308px;
 
-$breakpoint--laptop: 1124px;
-$breakpoint--tablet: 768px;
-$breakpoint--mobile: 320px;
+// $breakpoint--laptop: 1124px;
+// $breakpoint--tablet: 768px;
+// $breakpoint--mobile: 320px;

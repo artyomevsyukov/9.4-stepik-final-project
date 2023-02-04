@@ -1,5 +1,22 @@
-/* Reset and base styles  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --bg-footer: #262626;
+  --btn-up: #59bd5a;
+  --bg-card-active: #757575;
+  --textBlack: #1d1d1d;
+  --colorBlack: #1d1d1d;
+  --textGray: #626262;
+  --textWhite: #fff;
+  --accent-color: #327430;
+  --container--laptop: 978px;
+  --container--tablet: 752px;
+  --container--mobile: 308px;
+  --breakpoint--laptop: 1124px;
+  --breakpoint--tablet: 768px;
+  --breakpoint--mobile: 320px;
+}
+
+/* Reset and base styles  */
 * {
   padding: 0px;
   margin: 0px;
@@ -117,9 +134,10 @@ legend {
   display: block;
 }
 
+html,
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -128,12 +146,16 @@ body {
 }
 
 .container {
-  max-width: 1140px;
-  padding: 0 15px;
+  max-width: var(--container--laptop);
+  padding: 0 8px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.accent {
+  color: var(--accent-color);
+}
+
 .create-line {
   width: 100%;
 }
@@ -146,19 +168,54 @@ body {
   opacity: 0.4;
 }
 
-.create-line {
+.header {
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
   width: 100%;
+  height: 72px;
+  -webkit-box-shadow: 0px 16px 16px -16px rgba(38, 38, 38, 0.16);
+          box-shadow: 0px 16px 16px -16px rgba(38, 38, 38, 0.16);
 }
-.create-line--white {
-  border-bottom: 1px solid #ffffff;
-  opacity: 0.4;
+
+.header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.create-line--gray {
-  border-bottom: 1px solid #757575;
-  opacity: 1;
+
+.right-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px 0;
 }
-.create-line--gray--02 {
-  border-bottom: 1px solid #757575;
-  opacity: 0.2;
+
+.logo {
+  padding: 30px 0;
+}
+
+.sign-in {
+  width: 78px;
+  height: 40px;
+  margin-right: 27px;
+  padding: 14px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  color: var(--textBlack);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 12px;
+}
+
+.shopping-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-right: 16px;
 }
 /*# sourceMappingURL=main.css.map */
