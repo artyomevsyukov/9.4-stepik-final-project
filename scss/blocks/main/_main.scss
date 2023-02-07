@@ -1,3 +1,25 @@
-// .main {
-//   top: 75px;
-// }
+.grid-card {
+  display: grid;
+  margin-top: 16px;
+}
+.card {
+}
+
+.card-img {
+  margin-bottom: 16px;
+  width: 308px;
+  height: 256px;
+}
+
+.kitchen {
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--textGray);
+}
+.delivery-time {
+  padding-top: 4px;
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--textBlack);
+}

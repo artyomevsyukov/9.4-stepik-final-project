@@ -1,7 +1,6 @@
 .header {
   // position: fixed;
   // z-index: 1;
-  background-color: #fff;
   width: 100%;
   height: 72px;
   box-shadow: 0px 16px 16px -16px rgba(38, 38, 38, 0.16);
@@ -9,6 +8,7 @@
 .header-row {
   display: flex;
   justify-content: space-between;
+  // box-shadow: 0px 16px 16px -16px rgba(38, 38, 38, 0.16);
 }
 
 .right-header {
@@ -19,8 +19,8 @@
   padding: 30px 0;
 }
 .sign-in {
-  // width: 78px;
-  // height: 40px;
+  width: 78px;
+  height: 40px;
   margin-right: 27px;
   padding: 14px 20px;
   line-height: 12px;
@@ -32,7 +32,8 @@
 }
 .shopping-cart {
   display: flex;
-  text-align: center;
+  // text-align: center;
   // align-items: center;
   margin-right: 16px;
+  // margin-bottom: 3px;
 }
