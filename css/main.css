@@ -4,7 +4,7 @@
   --bg-footer: #262626;
   --btn-up: #59bd5a;
   --bg-card-active: #757575;
-  --gray-line: rgba(117, 117, 117, 1);
+  --gray-line: rgba(117, 117, 117, 0.4);
   --white-line: #fff;
   --textBlack: #1d1d1d;
   --colorBlack: #1d1d1d;
@@ -250,6 +250,35 @@ body {
 
 .footer {
   background-color: var(--bg-footer);
+  padding-top: 56px;
+  padding-bottom: 40px;
+  color: var(--textWhite);
+}
+.footer a {
+  color: var(--textWhite);
+}
+
+.footer-logo {
+  padding-bottom: 40px;
+}
+
+.footer-nav {
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.download {
+  padding: 40px 0;
+}
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
 }
 
 .search-form {
@@ -275,8 +304,6 @@ body {
   border-bottom: 1px solid var(--white-line);
 }
 .create-line--gray {
-  width: 100%;
   border-bottom: 1px solid var(--gray-line);
-  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

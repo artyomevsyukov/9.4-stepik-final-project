@@ -1,3 +1,39 @@
 .footer {
   background-color: var(--bg-footer);
+  padding-top: 56px;
+  padding-bottom: 40px;
+  color: var(--textWhite);
+  a {
+    color: var(--textWhite);
+  }
+}
+
+.footer-logo {
+  padding-bottom: 40px;
+}
+.footer-nav {
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+.row-wrapper {
+}
+.column-1 {
+}
+.language-dropdown {
+}
+.social {
+}
+.social-row {
+}
+.column-2 {
+}
+.column-3 {
+}
+.download {
+  padding: 40px 0;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
 }
