@@ -22,6 +22,13 @@
 .language-dropdown {
 }
 .social {
+  p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  p span {
+    color: #49a144;
+  }
 }
 .social-row {
 }
@@ -31,9 +38,30 @@
 }
 .download {
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  & a {
+    margin-right: 12px;
+    margin-left: 27px;
+  }
 }
 .footer-info {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding-top: 40px;
+
+  font-size: 11px;
+  line-height: 13px;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: var(--textWhite);
+
+  & a:nth-child(1) {
+    margin-right: 174px;
+  }
+  & a:nth-child(2) {
+    margin-right: 148px;
+  }
 }

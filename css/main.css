@@ -142,6 +142,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
   font-weight: 400;
+  line-height: 15px;
 }
 
 .none {
@@ -267,18 +268,46 @@ body {
   padding-bottom: 48px;
 }
 
+.social p {
+  font-size: 16px;
+  line-height: 19px;
+}
+.social p span {
+  color: #49a144;
+}
+
 .download {
   padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.download a {
+  margin-right: 12px;
+  margin-left: 27px;
 }
 
 .footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 40px;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: var(--textWhite);
+}
+.footer-info a:nth-child(1) {
+  margin-right: 174px;
+}
+.footer-info a:nth-child(2) {
+  margin-right: 148px;
 }
 
 .search-form {
