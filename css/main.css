@@ -150,6 +150,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: var(--container--laptop);
   padding: 0 8px;
   margin-left: auto;
@@ -258,7 +259,7 @@ body {
 }
 
 .card:hover {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .footer {
@@ -360,5 +361,16 @@ body {
 }
 .create-line--gray {
   border-bottom: 1px solid var(--gray-line);
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../../img/ButtonTop/btn-up.svg") no-repeat;
 }
 /*# sourceMappingURL=main.css.map */

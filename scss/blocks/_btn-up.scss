@@ -1,0 +1,11 @@
+.scrollup {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  width: 80px;
+  height: 80px;
+
+  display: none;
+  text-indent: -9999px;
+  background: url("../../img/ButtonTop/btn-up.svg") no-repeat;
+}
