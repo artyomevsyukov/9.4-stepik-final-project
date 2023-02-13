@@ -310,14 +310,13 @@ body {
   margin-right: 148px;
 }
 
-.search-form {
+.search {
   margin-top: 30px;
   margin-bottom: 56px;
-  border-bottom: 1px solid rgba(98, 98, 98, 0.3) !important;
-  opacity: 0.5;
+  border-bottom: 1px solid rgba(98, 98, 98, 0.3);
 }
 
-.search {
+.search-form {
   height: 48px;
   width: 100%;
   padding-top: 25px;
@@ -326,6 +325,21 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.search-form::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+.search-form::-moz-placeholder {
+  opacity: 0.5;
+}
+.search-form:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.search-form::-ms-input-placeholder {
+  opacity: 0.5;
+}
+.search-form::placeholder {
+  opacity: 0.5;
 }
 
 .create-line--white {
