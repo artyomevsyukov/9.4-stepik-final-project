@@ -1,3 +1,6 @@
+.main {
+  margin-top: 103px;
+}
 .grid-container {
   display: grid;
   margin-top: 16px;
@@ -28,4 +31,5 @@
   }
 }
 .card:hover {
+  opacity: 0.4;
 }
