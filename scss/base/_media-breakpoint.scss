@@ -1,22 +1,16 @@
 @mixin laptop() {
-  @media (max-width: var(--breakpoint--laptop)) {
+  @media (max-width: $breakpoint--laptop) {
     @content;
   }
 }
 
 @mixin tablet() {
-  @media (max-width: var(--breakpoint--tablet)) {
+  @media (max-width: $breakpoint--tablet) {
     @content;
   }
 }
 @mixin mobile() {
-  @media (max-width: var(--breakpoint--mobile)) {
+  @media (max-width: $breakpoint--mobile) {
     @content;
   }
 }
-
-// @mixin tablet() {
-//   @media (max-width: $breakpoint--tablet) {
-//     @content;
-//   }
-// }

@@ -14,6 +14,7 @@
   --textGray: #626262;
   --textWhite: #fff;
   --accent-color: #327430;
+
   --container--laptop: 978px;
   --container--tablet: 752px;
   --container--mobile: 308px;
@@ -22,7 +23,13 @@
   --breakpoint--tablet: 768px;
   --breakpoint--mobile: 320px;
 }
+$container--laptop: 978px;
+$container--tablet: 752px;
+$container--mobile: 308px;
 
+$breakpoint--laptop: 1124px;
+$breakpoint--tablet: 768px;
+$breakpoint--mobile: 320px;
 // $bg-footer: #262626;
 // $btn-up: #59bd5a;
 // // $bg-card-active: #979797;

@@ -15,7 +15,7 @@ body {
 
 .container {
   position: relative;
-  max-width: var(--container--laptop);
+  max-width: $container--laptop;
   padding: 0 8px;
   margin-left: auto;
   margin-right: auto;
