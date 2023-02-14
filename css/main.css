@@ -234,15 +234,14 @@ body {
   margin-top: 16px;
   margin-bottom: 80px;
   gap: var(--gap);
-  -ms-grid-columns: 308px var(--gap) 308px var(--gap) 308px;
-  grid-template-columns: repeat(3, 308px);
+  -ms-grid-columns: minmax(100px, 368px) var(--gap) minmax(100px, 368px) var(--gap) minmax(100px, 368px);
+  grid-template-columns: repeat(3, minmax(100px, 368px));
   grid-auto-rows: 366px;
 }
 
 .card__img {
   margin-bottom: 16px;
-  width: 308px;
-  height: 256px;
+  max-width: 308px;
 }
 .card__kitchen {
   padding-top: 4px;
@@ -268,12 +267,12 @@ body {
   }
   .grid-container {
     margin-bottom: 48px;
-    -ms-grid-columns: (368px)[2];
-    grid-template-columns: repeat(2, 368px);
+    -ms-grid-columns: (minmax(100px, 368px))[2];
+    grid-template-columns: repeat(2, minmax(100px, 368px));
+    grid-auto-rows: minmax(100px, 366px);
   }
   .card__img {
-    width: 376px;
-    height: 256px;
+    max-width: 367px;
   }
 }
 .footer {
