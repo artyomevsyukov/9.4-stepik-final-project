@@ -1,9 +1,32 @@
 @include tablet {
   .column-1 {
     margin-right: 80px;
+    .dropbtn {
+      width: 176px;
+    }
+
+    .social {
+      p {
+        margin-bottom: 17px;
+      }
+    }
+    .social-row {
+      & a:nth-child(2) {
+        padding-right: 16px;
+      }
+    }
   }
   .column-2 {
     margin-right: 60px;
+  }
+  .footer-info {
+    flex-wrap: wrap;
+    & a:nth-child(1) {
+      margin-right: 106px;
+    }
+    & a:nth-child(2) {
+      margin-right: 80px;
+    }
   }
 }
 @include mobile {

@@ -5,4 +5,10 @@
   }
 }
 @include mobile {
+  .sign-in {
+    margin-right: 14px;
+  }
+  .shopping-cart {
+    display: none;
+  }
 }

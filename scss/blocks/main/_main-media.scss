@@ -7,9 +7,20 @@
   .card {
     &__img {
       max-width: 368px;
-      height: 256px;
+      max-height: 256px;
     }
   }
 }
 @include mobile {
+  .grid-container {
+    margin-bottom: 48px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .card {
+    &__img {
+      max-width: 308px;
+      height: 256px;
+    }
+  }
 }
