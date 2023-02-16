@@ -8,6 +8,11 @@
   display: none;
   text-indent: -9999px;
   background: url("../../img/ButtonTop/btn-up.svg") no-repeat;
+  transition: 0.1s all ease-in-out;
+  &:hover {
+    transform: scale(95%, 95%);
+    opacity: 0.5;
+  }
 }
 
 @include mobile {

@@ -8,7 +8,6 @@
   gap: var(--gap);
   grid-template-columns: repeat(3, minmax(100px, 368px));
   grid-template-rows: auto;
-  // grid-auto-rows: 366px;
 }
 .card {
   &__img {

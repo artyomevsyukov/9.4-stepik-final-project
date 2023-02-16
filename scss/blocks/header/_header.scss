@@ -30,8 +30,18 @@
   color: var(--textBlack);
   font-weight: 500;
   font-size: 13px;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    background-color: #f2f3f5;
+  }
 }
 .shopping-cart {
   display: flex;
   margin-right: 16px;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+  }
 }

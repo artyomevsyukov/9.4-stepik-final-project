@@ -14,21 +14,20 @@
 }
 @include mobile {
   .grid-container {
-    margin-bottom: -33px;
+    // margin-bottom: -33px;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
+
+    & a:nth-child(n + 5) {
+      display: none;
+    }
+    // Скрытие элементов
   }
+
   .card {
     &__img {
       max-width: 308px;
       height: 246px;
     }
-  }
-  .card9,
-  .card8,
-  .card7,
-  .card6,
-  .card5 {
-    display: none;
   }
 }

@@ -36,9 +36,7 @@
     width: 227px;
     height: 40px;
     text-align: start;
-    // padding: 16px;
     padding-left: 49px;
-    // padding-bottom: 18px;
     border: none;
 
     &::before {
@@ -64,7 +62,6 @@
     position: absolute;
     width: 100%;
     background-color: #3b3b3b;
-    // min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
@@ -96,8 +93,21 @@
     p span {
       color: #49a144;
     }
+
+    &:hover {
+      color: #49a144;
+    }
+
+    &:hover span {
+      color: #fff;
+    }
   }
   .social-row {
+    transition: 0.1s all linear;
+    & a img:hover {
+      transform: scale(110%, 110%);
+    }
+
     & a:nth-child(1) {
       padding-left: 2px;
       padding-right: 15px;
@@ -114,12 +124,19 @@
   display: flex;
   flex-direction: column;
   row-gap: 23px;
+
+  & a:hover {
+    color: var(--accent-color);
+  }
 }
 .column-3 {
   padding-top: 8px;
   display: flex;
   flex-direction: column;
   row-gap: 23px;
+  & a:hover {
+    color: var(--accent-color);
+  }
 }
 
 .download {
@@ -130,6 +147,14 @@
   & a {
     margin-right: 12px;
     margin-left: 27px;
+  }
+
+  & a img {
+    transition: 0.1s all linear;
+  }
+
+  & a img:hover {
+    transform: scale(105%, 105%);
   }
 }
 .footer-info {
@@ -152,5 +177,9 @@
   }
   & a:nth-child(2) {
     margin-right: 148px;
+  }
+
+  & a:hover {
+    color: var(--accent-color);
   }
 }
