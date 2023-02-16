@@ -5,6 +5,7 @@
   --btn-up: #59bd5a;
   --bg-card-active: #979797;
   --bg-card-active: #757575;
+  --bg-white: #fff;
   --gray-line: rgba(117, 117, 117, 0.4);
   --white-line: #fff;
   --textBlack: #1d1d1d;
@@ -161,6 +162,12 @@ body {
   color: var(--accent-color);
 }
 
+.title1 {
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--textBlack);
+}
+
 .title2 {
   font-size: 22px;
   line-height: 34px;
@@ -251,7 +258,7 @@ body {
     display: none;
   }
 }
-.main {
+.main-wrap {
   margin-top: 103px;
 }
 
@@ -647,5 +654,17 @@ body {
     height: 64px;
     background: url("../../img/ButtonTop/btn-up64.svg") no-repeat;
   }
+}
+.restaurant-bg {
+  height: 364px;
+  background-image: url("../../../img/restaurant/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.restaurant-name {
+  max-width: 389px;
+  max-height: 204px;
+  background-color: var(--bg-white);
 }
 /*# sourceMappingURL=main.css.map */

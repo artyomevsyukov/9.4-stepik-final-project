@@ -1,5 +1,7 @@
 .main {
-  margin-top: 103px;
+  &-wrap {
+    margin-top: 103px;
+  }
 }
 .grid-container {
   display: grid;
