@@ -9,3 +9,11 @@
   text-indent: -9999px;
   background: url("../../img/ButtonTop/btn-up.svg") no-repeat;
 }
+
+@include mobile {
+  .scrollup {
+    width: 64px;
+    height: 64px;
+    background: url("../../img/ButtonTop/btn-up64.svg") no-repeat;
+  }
+}

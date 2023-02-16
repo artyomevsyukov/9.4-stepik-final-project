@@ -7,30 +7,21 @@
   .card {
     &__img {
       max-width: 368px;
+      // height: 256px;
       height: auto;
     }
   }
 }
 @include mobile {
   .grid-container {
-    // gap: 0;
     margin-bottom: -33px;
     grid-template-columns: 1fr;
-    // // grid-rows
-    // // grid-template-rows: repeat(4, 246px);
-    // // grid-auto-rows: 0%;
-    // // grid-template-columns: [start] 140px [line2 col2-start] 250px [col2-end end];
-    // grid-template-rows: [row4-end] none;
-    // // [row1-end] 10vh [last]
+    grid-auto-rows: auto;
   }
   .card {
     &__img {
       max-width: 308px;
-      max-height: 246;
-      .card__picture {
-        display: block;
-        height: 246px;
-      }
+      height: 246px;
     }
   }
   .card9,
