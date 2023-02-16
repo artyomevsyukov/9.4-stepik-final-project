@@ -11,6 +11,7 @@
       }
     }
     .social-row {
+      // margin-bottom: 15px;
       & a:nth-child(2) {
         padding-right: 16px;
       }
@@ -20,6 +21,9 @@
     margin-right: 60px;
   }
   .footer-info {
+    & a {
+      margin-bottom: 10px;
+    }
     flex-wrap: wrap;
     & a:nth-child(1) {
       margin-right: 106px;
@@ -30,4 +34,34 @@
   }
 }
 @include mobile {
+  .social-row {
+    margin-bottom: 36px;
+  }
+
+  .column-2 {
+    margin-bottom: 18px;
+  }
+  .footer-nav {
+    padding-bottom: 43px;
+  }
+  .download {
+    padding: 24px 0;
+    & a:nth-child(1) {
+      margin-right: 3px;
+      margin-left: 30px;
+    }
+    & a:nth-child(2) {
+      margin-right: 9px;
+      margin-left: 23px;
+    }
+  }
+  .footer-info {
+    & a {
+      margin-bottom: 24px;
+      margin-right: auto;
+    }
+    & a:last-child {
+      margin-bottom: 40px;
+    }
+  }
 }
