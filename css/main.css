@@ -656,7 +656,7 @@ body {
     background: url("../../img/ButtonTop/btn-up64.svg") no-repeat;
   }
 }
-.main-restaurant {
+.restaurant {
   margin-top: 73px;
 }
 
@@ -723,9 +723,52 @@ body {
 .menu {
   margin-top: 56px;
   margin-bottom: 80px;
+  color: var(--textBlack);
+}
+.menu .menu__title {
+  margin-bottom: 32px;
 }
 
-.menu-title {
-  margin-bottom: 32px;
+.menu__grid-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 49px 16px;
+  -ms-grid-columns: minmax(100px, 470px) 16px minmax(100px, 470px);
+  grid-template-columns: repeat(2, minmax(100px, 470px));
+}
+.menu__grid-container .menu-card {
+  height: 160px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+.menu__grid-container .menu-card:hover {
+  background-color: rgba(117, 117, 117, 0.1);
+}
+.menu__grid-container .menu-card .menu-card__item {
+  padding: 16px 0 16px 16px;
+  min-width: 300px;
+}
+.menu__grid-container .menu-card .menu-card__title {
+  padding-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.menu__grid-container .menu-card .menu-card__description {
+  padding-bottom: 56px;
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--textGray);
+}
+.menu__grid-container .menu-card .menu-card__price {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--textBlack);
+}
+.menu__grid-container .menu-card .menu-card__img {
+  max-width: 170px;
 }
 /*# sourceMappingURL=main.css.map */
