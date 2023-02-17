@@ -2,6 +2,7 @@
 :root {
   --gap: 16px 16px;
   --bg-footer: #262626;
+  --bg-button: #262626;
   --btn-up: #59bd5a;
   --bg-card-active: #979797;
   --bg-card-active: #757575;
@@ -159,7 +160,7 @@ body {
 }
 
 .accent {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 .title1 {
@@ -431,7 +432,7 @@ body {
 .column-1 .social p span {
   color: #49a144;
 }
-.column-1 .social:hover {
+.column-1 .social:hover p {
   color: #49a144;
 }
 .column-1 .social:hover span {
@@ -655,16 +656,76 @@ body {
     background: url("../../img/ButtonTop/btn-up64.svg") no-repeat;
   }
 }
+.main-restaurant {
+  margin-top: 73px;
+}
+
 .restaurant-bg {
+  position: relative;
   height: 364px;
-  background-image: url("../../../img/restaurant/bg.jpg");
+  background: url("../../../img/restaurant/bg.jpg");
   background-size: cover;
   background-position: center center;
 }
-
-.restaurant-name {
+.restaurant-bg .restaurant-card {
+  position: absolute;
+  top: 80px;
+  padding: 38px 29px 38px 38px;
   max-width: 389px;
   max-height: 204px;
   background-color: var(--bg-white);
+}
+.restaurant-bg .restaurant-card__name {
+  margin-bottom: 54px;
+}
+.restaurant-bg .restaurant-card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.restaurant-bg .restaurant-card__kitchen {
+  min-width: 172px;
+  margin-right: 50px;
+}
+.restaurant-bg .restaurant-card__delivery-time {
+  width: 100px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: var(--bg-button);
+  padding: 8px 16px;
+  color: var(--textWhite);
+}
+
+.filter {
+  height: 80px;
+}
+
+.filter__row {
+  padding-top: 32px;
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.filter__link {
+  color: var(--textGray);
+  margin-right: 40px;
+}
+.filter__link:hover {
+  color: var(--accent-color);
+}
+
+.menu {
+  margin-top: 56px;
+  margin-bottom: 80px;
+}
+
+.menu-title {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=main.css.map */

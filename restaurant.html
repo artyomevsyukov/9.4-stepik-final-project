@@ -12,7 +12,7 @@
     <header class="header">
       <div class="container">
         <div class="header-row">
-          <a href="#!" class="header-logo">
+          <a href="./index.html" class="header-logo">
             <picture>
               <source media="(min-width: 769px)" srcset="./img/logo/logo.svg" />
               <img src="./img/logo/2logo.svg" alt="Uber Eats" />
@@ -29,22 +29,89 @@
       </div>
     </header>
     <!-- main -->
-    <main class="main">
+    <main class="main-restaurant">
       <div class="restaurant-bg">
-        <div class="restaurant-name">
-          <h1 class="title1">Трактир «Пушкин»</h1>
-
-          <p class="card__kitchen">₽₽₽ • Европейская</p>
+        <div class="container">
+          <div class="restaurant-card">
+            <h1 class="restaurant-card__name title1">Трактир «Пушкин»</h1>
+            <div class="restaurant-card__row">
+              <p class="restaurant-card__kitchen card__kitchen">
+                ₽₽₽ • Европейская
+              </p>
+              <div class="restaurant-card__delivery-time">40 - 50 мин</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="filter"></div>
-      <div class="menu"></div>
+      <div class="filter create-line--gray">
+        <div class="container">
+          <div class="filter__row">
+            <ul class="filter__list">
+              <li class="filter__item">
+                <a href="#" class="filter__link accent">Закуски</a>
+              </li>
+              <li class="filter__item">
+                <a href="#" class="filter__link">Салаты</a>
+              </li>
+              <li class="filter__item">
+                <a href="#" class="filter__link">Супы</a>
+              </li>
+              <li class="filter__item">
+                <a href="#" class="filter__link">Горячие блюда</a>
+              </li>
+              <li class="filter__item">
+                <a href="#" class="filter__link">Гарниры</a>
+              </li>
+              <li class="filter__item">
+                <a href="#" class="filter__link">Десерты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="container">
+          <h2 class="menu-title title2">Закуски</h2>
+          <div class="grid-container">
+            <!-- Card -->
+            <a href="#">
+              <div class="card">
+                <!-- card__img -->
+                <div class="card__img">
+                  <picture class="card__picture">
+                    <source
+                      media="(min-width: 769px)"
+                      srcset="./img/Stores/Макдоналдс.jpg"
+                    />
+                    <source
+                      media="(min-width: 321px)"
+                      srcset="./img/Stores/2Макдоналдс.jpg"
+                    />
+                    <img
+                      src="./img/Stores/Макдоналдс.jpg"
+                      alt="Flowers"
+                      style="width: auto"
+                    />
+                  </picture>
+                </div>
+                <h3 class="title3">Макдоналдс — Газетный</h3>
+                <p class="card__kitchen">₽₽ • Бургеры</p>
+                <p class="card__delivery-time">25 - 35 мин</p>
+              </div></a
+            >
+            <!-- Card END-->
+          </div>
+        </div>
+      </div>
     </main>
     <!-- main end -->
+    <!-- footer start -->
     <footer class="footer">
       <div class="container">
         <div class="footer-logo create-line--gray">
-          <a href="#"><img src="./img/logo/white-logo.svg" alt="logo" /></a>
+          <a href="./index.html"
+            ><img src="./img/logo/white-logo.svg" alt="logo"
+          /></a>
         </div>
         <!-- NAV -->
         <div class="footer-nav create-line--gray">
@@ -59,7 +126,9 @@
               </div>
 
               <div class="social">
-                <p><span>#</span>UberEats</p>
+                <a href="./index.html"
+                  ><p><span>#</span>UberEats</p></a
+                >
                 <div class="social-row">
                   <a href="#!"
                     ><img src="./img/footer/facebook.svg" alt="facebook"
@@ -104,6 +173,7 @@
         </div>
       </div>
     </footer>
+    <!-- footer end -->
     <a href="#" class="scrollup">Наверх</a>
     <script src="./js/main.js"></script>
   </body>

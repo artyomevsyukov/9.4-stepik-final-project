@@ -1,15 +1,64 @@
+.main-restaurant {
+  margin-top: 73px;
+}
 .restaurant-bg {
+  position: relative;
   height: 364px;
-  background-image: url("../../../img/restaurant/bg.jpg");
+  background: url("../../../img/restaurant/bg.jpg");
   background-size: cover;
   background-position: center center;
-}
-.restaurant-name {
-  max-width: 389px;
-  max-height: 204px;
-  background-color: var(--bg-white);
+
+  .restaurant-card {
+    position: absolute;
+    top: 80px;
+    padding: 38px 29px 38px 38px;
+    max-width: 389px;
+    max-height: 204px;
+    background-color: var(--bg-white);
+
+    &__name {
+      margin-bottom: 54px;
+    }
+  }
+
+  .restaurant-card__row {
+    display: flex;
+  }
+  .restaurant-card__kitchen {
+    min-width: 172px;
+    margin-right: 50px;
+  }
+  .restaurant-card__delivery-time {
+    width: 100px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: var(--bg-button);
+    padding: 8px 16px;
+    color: var(--textWhite);
+  }
 }
 .filter {
+  height: 80px;
+}
+.filter__row {
+  padding-top: 32px;
+}
+.filter__list {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+.filter__link {
+  color: var(--textGray);
+  margin-right: 40px;
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 .menu {
+  margin-top: 56px;
+  margin-bottom: 80px;
+}
+.menu-title {
+  margin-bottom: 32px;
 }

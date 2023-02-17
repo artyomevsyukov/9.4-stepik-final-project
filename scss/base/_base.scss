@@ -21,7 +21,7 @@ body {
 }
 
 .accent {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 .title1 {
   font-size: 36px;
