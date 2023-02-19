@@ -1,4 +1,40 @@
 @include tablet {
+  .restaurant-bg {
+    .restaurant-card {
+      padding: 38px 52px 38px 48px;
+      min-width: 432px;
+    }
+    .restaurant-card__kitchen {
+      margin-right: 60px;
+    }
+  }
+  .menu {
+    margin-bottom: 48px;
+  }
+  .menu__grid-container {
+    gap: 32px 0;
+    grid-template-columns: 735px;
+    // grid-template-columns: 1fr;
+    .container {
+      max-width: $container--tablet;
+    }
+    .menu-card {
+      //   width: 736px;
+      width: 735px;
+      .menu-card__item {
+        padding: 16px 8px 16px 24px;
+        // width: 534px;
+      }
+
+      .menu-card__img {
+        & img {
+          max-width: 200px;
+          min-height: 158px;
+        }
+      }
+    }
+  }
 }
+
 @include mobile {
 }

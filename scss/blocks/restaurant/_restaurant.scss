@@ -71,10 +71,11 @@
   gap: 49px 16px;
   grid-template-columns: repeat(2, minmax(100px, 470px));
   .menu-card {
-    box-sizing: border-box;
     height: 160px;
     // height: 160px;
     display: inline-flex;
+    // dfsfsdfdsfdfdsfdfsfdf
+    justify-content: space-between;
     border: 1px solid rgba(117, 117, 117, 0.2);
     border-radius: 2px;
     &:hover {

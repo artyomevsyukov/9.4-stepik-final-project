@@ -18,7 +18,7 @@
   --accent-color: #49a144;
 
   --container--laptop: 978px;
-  --container--tablet: 752px;
+  --container--tablet: 768px;
   --container--mobile: 308px;
 
   --breakpoint--laptop: 1124px;
@@ -26,7 +26,8 @@
   --breakpoint--mobile: 320px;
 }
 $container--laptop: 978px;
-$container--tablet: 752px;
+// $container--tablet: 752px;
+$container--tablet: 768px;
 $container--mobile: 308px;
 
 $breakpoint--laptop: 1124px;
