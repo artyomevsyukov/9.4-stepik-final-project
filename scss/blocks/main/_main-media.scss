@@ -8,7 +8,11 @@
     &__img {
       max-width: 368px;
       // height: 256px;
-      height: auto;
+      // height: auto;
+      & img {
+        height: 256px;
+        // height: auto;
+      }
     }
   }
 }
@@ -21,7 +25,7 @@
     & a:nth-child(n + 5) {
       display: none;
     }
-    // Скрытие элементов
+    // Скрытие элементов с пятого
   }
 
   .card {

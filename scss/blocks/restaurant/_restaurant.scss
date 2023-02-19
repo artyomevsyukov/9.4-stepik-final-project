@@ -71,7 +71,9 @@
   gap: 49px 16px;
   grid-template-columns: repeat(2, minmax(100px, 470px));
   .menu-card {
+    box-sizing: border-box;
     height: 160px;
+    // height: 160px;
     display: inline-flex;
     border: 1px solid rgba(117, 117, 117, 0.2);
     border-radius: 2px;
@@ -79,9 +81,13 @@
       background-color: rgba(117, 117, 117, 0.1);
     }
     .menu-card__item {
-      padding: 16px 0 16px 16px;
-      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px 8px 16px 16px;
+      width: 300px;
     }
+
     .menu-card__title {
       padding-bottom: 4px;
       font-size: 16px;
@@ -89,7 +95,7 @@
     }
 
     .menu-card__description {
-      padding-bottom: 56px;
+      margin-bottom: 10px;
       font-size: 13px;
       line-height: 21px;
       color: var(--textGray);
@@ -101,7 +107,10 @@
       color: var(--textBlack);
     }
     .menu-card__img {
-      max-width: 170px;
+      & img {
+        max-width: 170px;
+        min-height: 158px;
+      }
     }
   }
 }
