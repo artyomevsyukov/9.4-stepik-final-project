@@ -676,6 +676,9 @@ body {
   max-width: 389px;
   max-height: 204px;
   background-color: var(--bg-white);
+  -webkit-box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+          box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
 }
 .restaurant-bg .restaurant-card__name {
   margin-bottom: 54px;
@@ -727,8 +730,15 @@ body {
   margin-bottom: 80px;
   color: var(--textBlack);
 }
-.menu .menu__title {
+.menu__title {
   margin-bottom: 32px;
+}
+.menu__underline {
+  display: none;
+  background-color: #757575;
+  width: 50px;
+  height: 1px;
+  margin: 0 auto 43px;
 }
 
 .menu__grid-container {
@@ -740,6 +750,7 @@ body {
 }
 .menu__grid-container .menu-card {
   height: 160px;
+  width: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -764,12 +775,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 8px 16px 16px;
-  width: 300px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menu__grid-container .menu-card .menu-card__title {
   padding-bottom: 4px;
   font-size: 16px;
   line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__grid-container .menu-card .menu-card__description {
   margin-bottom: 10px;
@@ -789,6 +804,9 @@ body {
 }
 
 @media (max-width: 769px) {
+  .restaurant-bg {
+    background: url("../../../img/restaurant/bg-tablet.jpg");
+  }
   .restaurant-bg .restaurant-card {
     padding: 38px 52px 38px 48px;
     min-width: 432px;
@@ -801,14 +819,15 @@ body {
   }
   .menu__grid-container {
     gap: 32px 0;
-    -ms-grid-columns: 735px;
-    grid-template-columns: 735px;
+    width: 100%;
+    -ms-grid-columns: minmax(450px, 735px);
+    grid-template-columns: minmax(450px, 735px);
   }
   .menu__grid-container .container {
     max-width: 768px;
   }
   .menu__grid-container .menu-card {
-    width: 735px;
+    width: 100%;
   }
   .menu__grid-container .menu-card .menu-card__item {
     padding: 16px 8px 16px 24px;
@@ -816,6 +835,103 @@ body {
   .menu__grid-container .menu-card .menu-card__img img {
     max-width: 200px;
     min-height: 158px;
+  }
+}
+@media (max-width: 320px) {
+  .filter {
+    display: none;
+  }
+  .container {
+    padding: 0 4px 0 8px;
+  }
+  .header .sign-in {
+    margin-right: 4px;
+  }
+  .header .shopping-cart {
+    display: none;
+  }
+  .restaurant-bg {
+    height: 255px;
+    background: url("../../../img/restaurant/bg-mobile.jpg");
+  }
+  .restaurant-bg .restaurant-card {
+    text-align: center;
+    top: 131px;
+    padding: 24px 49px;
+    width: 308px;
+    height: 180px;
+    min-width: 308px;
+  }
+  .restaurant-bg .restaurant-card__name {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  .restaurant-bg .restaurant-card__row {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurant-bg .restaurant-card__kitchen {
+    text-align: center;
+    min-width: 126px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+  .card__kitchen {
+    padding-top: 0px;
+  }
+  .menu {
+    margin-bottom: 40px;
+  }
+  .menu__title {
+    margin-top: 112px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .menu__underline {
+    display: block;
+  }
+  .menu__grid-container {
+    gap: 16px 0;
+    -ms-grid-columns: 308px;
+    grid-template-columns: 308px;
+  }
+  .menu__grid-container .container {
+    max-width: 768px;
+  }
+  .menu__grid-container .menu-card {
+    width: 308px;
+    height: 102px;
+    border: 0px solid rgba(117, 117, 117, 0.2);
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  }
+  .menu__grid-container .menu-card .menu-card__item {
+    padding: 0 8px 15px 0;
+  }
+  .menu__grid-container .menu-card .menu-card__item-wrap .menu-card__title {
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .menu__grid-container .menu-card .menu-card__img {
+    width: 102px;
+    height: 102px;
+  }
+  .menu__grid-container .menu-card .menu-card__img img {
+    width: 102px;
+    height: 102px;
   }
 }
 /*# sourceMappingURL=main.css.map */

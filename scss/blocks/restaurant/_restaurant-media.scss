@@ -1,8 +1,10 @@
 @include tablet {
   .restaurant-bg {
+    background: url("../../../img/restaurant/bg-tablet.jpg");
     .restaurant-card {
       padding: 38px 52px 38px 48px;
       min-width: 432px;
+      // width: 100%;
     }
     .restaurant-card__kitchen {
       margin-right: 60px;
@@ -13,17 +15,16 @@
   }
   .menu__grid-container {
     gap: 32px 0;
-    grid-template-columns: 735px;
+    width: 100%;
+    grid-template-columns: minmax(450px, 735px);
     // grid-template-columns: 1fr;
     .container {
       max-width: $container--tablet;
     }
     .menu-card {
-      //   width: 736px;
-      width: 735px;
+      width: 100%;
       .menu-card__item {
         padding: 16px 8px 16px 24px;
-        // width: 534px;
       }
 
       .menu-card__img {
@@ -37,4 +38,110 @@
 }
 
 @include mobile {
+  .filter {
+    display: none;
+  }
+  .container {
+    padding: 0 4px 0 8px;
+  }
+  .header {
+    .sign-in {
+      margin-right: 4px;
+    }
+    .shopping-cart {
+      display: none;
+    }
+  }
+  .restaurant-bg {
+    height: 255px;
+    background: url("../../../img/restaurant/bg-mobile.jpg");
+
+    .restaurant-card {
+      // justify-content: center;
+      // align-items: center;
+      text-align: center;
+      top: 131px;
+      padding: 24px 49px;
+      width: 308px;
+      height: 180px;
+
+      min-width: 308px;
+
+      &__name {
+        display: inline-flex;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 40px;
+      }
+      &__row {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .restaurant-card__kitchen {
+      text-align: center;
+      min-width: 126px;
+      margin-right: 0px;
+      margin-bottom: 16px;
+    }
+  }
+  .card {
+    &__kitchen {
+      padding-top: 0px;
+    }
+  }
+  // menu
+  .menu {
+    margin-bottom: 40px;
+    &__title {
+      margin-top: 112px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    &__underline {
+      display: block;
+    }
+  }
+
+  .menu__grid-container {
+    gap: 16px 0;
+    grid-template-columns: 308px;
+    // grid-template-columns: 1fr;
+    .container {
+      max-width: $container--tablet;
+    }
+    .menu-card {
+      width: 308px;
+      height: 102px;
+      border: 0px solid rgba(117, 117, 117, 0.2);
+      border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+
+      .menu-card__item {
+        padding: 0 8px 15px 0;
+        &-wrap {
+          // white-space: nowrap;
+          // overflow: hidden;
+          .menu-card__title {
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            padding-bottom: 4px;
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .menu-card__img {
+        width: 102px;
+        height: 102px;
+
+        & img {
+          width: 102px;
+          height: 102px;
+        }
+      }
+    }
+  }
 }
