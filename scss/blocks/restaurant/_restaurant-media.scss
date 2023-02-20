@@ -4,7 +4,6 @@
     .restaurant-card {
       padding: 38px 52px 38px 48px;
       min-width: 432px;
-      // width: 100%;
     }
     .restaurant-card__kitchen {
       margin-right: 60px;
@@ -16,7 +15,7 @@
   .menu__grid-container {
     gap: 32px 0;
     width: 100%;
-    grid-template-columns: minmax(450px, 735px);
+    grid-template-columns: minmax(450px, 752px);
     // grid-template-columns: 1fr;
     .container {
       max-width: $container--tablet;
@@ -29,8 +28,9 @@
 
       .menu-card__img {
         & img {
-          max-width: 200px;
-          min-height: 158px;
+          max-width: none;
+          width: 200px;
+          height: 158px;
         }
       }
     }
@@ -45,9 +45,9 @@
     padding: 0 4px 0 8px;
   }
   .header {
-    .sign-in {
-      margin-right: 4px;
-    }
+    // .sign-in {
+    //   margin-right: 4px;
+    // }
     .shopping-cart {
       display: none;
     }
@@ -121,18 +121,13 @@
       .menu-card__item {
         padding: 0 8px 15px 0;
         &-wrap {
-          // white-space: nowrap;
-          // overflow: hidden;
           .menu-card__title {
-            // overflow: hidden;
-            // text-overflow: ellipsis;
             padding-bottom: 4px;
             font-size: 14px;
             line-height: 24px;
           }
         }
       }
-
       .menu-card__img {
         width: 102px;
         height: 102px;

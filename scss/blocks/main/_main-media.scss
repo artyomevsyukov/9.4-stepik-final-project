@@ -7,13 +7,24 @@
   .card {
     &__img {
       max-width: 368px;
-      // height: 256px;
-      // height: auto;
+      height: auto;
+      // width: 368px;
       & img {
-        height: 256px;
+        max-width: none;
         // height: auto;
+        // width: 368px;
       }
     }
+    // .card {
+    //   &__img {
+    //     max-width: 368px;
+    //     // height: 256px;
+    //     // height: auto;
+    //     & img {
+    //       height: 256px;
+    //       // height: auto;
+    //     }
+    //   }
   }
 }
 @include mobile {
@@ -30,7 +41,8 @@
 
   .card {
     &__img {
-      max-width: 308px;
+      max-width: none;
+      width: 308px;
       height: 246px;
     }
   }
